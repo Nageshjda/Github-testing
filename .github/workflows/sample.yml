@@ -18,3 +18,14 @@ jobs:
       - name: working directory
         run: pwd 
         shell: bash
+
+  node-version:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: node version 
+        run: node -v 
+      - uses: actions/setup-nodev@v1
+        with: 
+          node-version: 9
+      - name: node version
+        run: node -v 
