@@ -8,3 +8,13 @@ jobs:
     steps:
       - name: echo a string
         run: echo "Hello World"
+  
+
+  run-powershell-commands:
+    runs-on: windows-latest
+    steps:
+      - name: directory shell
+        run: Get-Location
+      - name: working directory
+        run: pwd 
+        
