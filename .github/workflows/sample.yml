@@ -24,6 +24,7 @@ jobs:
     steps: 
       - name: node version 
         run: node -v 
+      - uses: actions/checkout@v2
       - uses: actions/setup-nodev@v1
         with: 
           node-version: 9
